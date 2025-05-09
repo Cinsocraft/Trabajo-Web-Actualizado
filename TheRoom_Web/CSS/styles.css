@@ -12,7 +12,13 @@
 
 body {
     background-color: #f4f4f4;
-    color: #333;
+    color: #00ff4c;
+}
+/* variables*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Barra de navegación */
@@ -140,32 +146,6 @@ main > #header2 > div{
     align-items: center;
 }
 
-h1{
-    color: azure;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 0 30px;
-}
-
-h2{
-    color: rgb(255, 0, 0);
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 0 30px;
-}
-
-p {
-    color: azure;
-    padding: 50px 30px;
-    max-width: 500px;
-    text-align: center;
-    /* margin-top: 4rem; */
-}
-
-.copyright > p {
-    color: azure;
-}
-
 
 /* FOOTER */
 /* NO CAMBIAR JUNTO CON EL MENÚ HAMBUIRGUESA */
@@ -228,6 +208,7 @@ div > .btn-group {
     gap: 20px;
 }
 .btn-group > a {
+    display: flex;
     padding: 8px 20px;
     font-weight: bold;       
     border-radius: 8px;
@@ -334,6 +315,6 @@ div > .btn-group {
             padding: 0 0;
         }
         p{
-            padding: 50 0;
+            padding: 50px 0;
         }
 }
