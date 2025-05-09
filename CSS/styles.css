@@ -1,50 +1,20 @@
-<<<<<<< HEAD
-:root {
-    --pr-color: rgb(0, 0, 0);
-    --text-color-w: rgb(255, 255, 255);
-    --accent-color: rgb(0, 255, 34);
-} 
-=======
->>>>>>> parent of b18c46e (carpeta)
-/* Selector Universal */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-<<<<<<< HEAD
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #00ff4c;
-}
-/* variables*/
-=======
-    font-family: Arial, Helvetica, sans-serif;
-    /* color: azure; */
-
-    /* border: 1px red solid; */
-
-}
 :root {
     --pr-color: rgb(0, 0, 0);
     --text-color-w: rgb(255, 255, 255);
     --accent-color: rgb(0, 255, 34);
 } /* variables*/
->>>>>>> parent of b18c46e (carpeta)
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* border: 1px red solid; */
 }
-<<<<<<< HEAD
-=======
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
->>>>>>> parent of b18c46e (carpeta)
 
 /* Barra de navegación */
 
@@ -167,33 +137,104 @@ main {
 
 main > #header2 > div{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    padding: 30px 40px;
 }
 
-<<<<<<< HEAD
-=======
 h1{
     color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    font-weight: lighter;
     text-align: center;
-    padding: 0 30px;
+    
 }
 
 h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 30px;
     color: azure;
     text-align: center;
-    padding: 0 30px;
+    
 }
 
 p {
+    text-align: center;
     color: azure;
-    padding: 50px 30px;
     max-width: 500px;
     text-align: center;
     /* margin-top: 4rem; */
 }
 
->>>>>>> parent of b18c46e (carpeta)
+#header2 > div:last-child{
+    align-items: center;
+    gap: 25px;
+    font-size: 18px;
+}
+
+/* PRODUCTOS */
+#Juan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 80px 20px;
+}
+#titulo_Products {
+    display: flex;
+    max-width: 200px;
+    padding: 30px 20px;
+}
+#titulo_Products > h1 {
+    text-align: left;
+}
+#titulo_Products > h1 > span{
+    color: red;
+}
+
+#Products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+}
+
+.f-rowp {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 30px;
+}
+.f-rowp > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+.f-rowp > div > h2{
+    font-size: 40px;
+    line-height: 110%;
+}
+
+.f-rowp > div > p{
+    text-align: left;
+}
+
+.f-rowp > div > img {
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* FOOTER */
 /* NO CAMBIAR JUNTO CON EL MENÚ HAMBUIRGUESA */
@@ -207,11 +248,8 @@ footer {
 footer > .f-row {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-=======
     flex-wrap: wrap;
 
->>>>>>> parent of b18c46e (carpeta)
 }
 footer > .f-row > .social-icons{
     padding: 10px 0;
@@ -251,29 +289,19 @@ footer > .f-row > .copyright {
     color: red;
     transition: 0.3s;
 }
-<<<<<<< HEAD
-=======
-p2 {
+.copyright > p{
     color: azure;
+    padding: 0 0;
 }
->>>>>>> parent of b18c46e (carpeta)
 
 /* BOTONES */
 
 /* propiedades counes a los dos botones */
 div > .btn-group {
     display: flex;
-<<<<<<< HEAD
-    flex-direction: row;
     gap: 20px;
 }
 .btn-group > a {
-    display: flex;
-=======
-    gap: 20px;
-}
-.btn-group > a {
->>>>>>> parent of b18c46e (carpeta)
     padding: 8px 20px;
     font-weight: bold;       
     border-radius: 8px;
@@ -306,11 +334,7 @@ div > .btn-group {
 
 /* Media QUERY */
 /* Tamaño mid */
-<<<<<<< HEAD
-@media (max-width: 868px) {
-=======
 @media (max-width: 768px) {
->>>>>>> parent of b18c46e (carpeta)
     
 
     .f-row{
@@ -328,7 +352,20 @@ div > .btn-group {
     footer{
         padding: 10px 35px;
     }
-    }
+    #titulo_Products {
+            padding: 0 2px;
+        }
+        #titulo_Products > h1 {
+            font-size: 70px;
+        }
+
+        #Products {
+            padding: 1px 1px;
+        }
+        .f-rowp > div > h2 {
+            font-size: 30px
+        }
+}
 /* Tamaño Pequeño */
 @media (max-width: 500px) {
         .nav-desktop {
@@ -384,10 +421,32 @@ div > .btn-group {
             padding: 0 0;
         }
         p{
-<<<<<<< HEAD
-            padding: 50px 0;
-=======
             padding: 50 0;
->>>>>>> parent of b18c46e (carpeta)
+        }
+
+        #titulo_Products {
+            justify-content: center;
+            min-width: 180px;
+            padding: 0 2px;
+        }
+        #titulo_Products > h1 {
+            padding: 10px 5px;
+            font-size: 40px;
+        }
+
+        #Products {
+            padding: 1px 1px;
+        }
+        .f-rowp > div > h2 {
+            font-size: 30px
+        }
+        .f-rowp > div > p {
+            text-align: center;
+        }
+
+        .f-rowp > div  {
+            justify-content: center;
+            min-height: 60px;
         }
 }
+
