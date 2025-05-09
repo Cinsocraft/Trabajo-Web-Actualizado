@@ -1,13 +1,17 @@
+<<<<<<< HEAD
 :root {
     --pr-color: rgb(0, 0, 0);
     --text-color-w: rgb(255, 255, 255);
     --accent-color: rgb(0, 255, 34);
 } 
+=======
+>>>>>>> parent of b18c46e (carpeta)
 /* Selector Universal */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 body {
@@ -15,11 +19,32 @@ body {
     color: #00ff4c;
 }
 /* variables*/
+=======
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: azure; */
+
+    /* border: 1px red solid; */
+
+}
+:root {
+    --pr-color: rgb(0, 0, 0);
+    --text-color-w: rgb(255, 255, 255);
+    --accent-color: rgb(0, 255, 34);
+} /* variables*/
+>>>>>>> parent of b18c46e (carpeta)
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+>>>>>>> parent of b18c46e (carpeta)
 
 /* Barra de navegación */
 
@@ -146,6 +171,29 @@ main > #header2 > div{
     align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+h1{
+    color: azure;
+    text-align: center;
+    padding: 0 30px;
+}
+
+h2{
+    color: azure;
+    text-align: center;
+    padding: 0 30px;
+}
+
+p {
+    color: azure;
+    padding: 50px 30px;
+    max-width: 500px;
+    text-align: center;
+    /* margin-top: 4rem; */
+}
+
+>>>>>>> parent of b18c46e (carpeta)
 
 /* FOOTER */
 /* NO CAMBIAR JUNTO CON EL MENÚ HAMBUIRGUESA */
@@ -159,6 +207,11 @@ footer {
 footer > .f-row {
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
+=======
+    flex-wrap: wrap;
+
+>>>>>>> parent of b18c46e (carpeta)
 }
 footer > .f-row > .social-icons{
     padding: 10px 0;
@@ -198,17 +251,29 @@ footer > .f-row > .copyright {
     color: red;
     transition: 0.3s;
 }
+<<<<<<< HEAD
+=======
+p2 {
+    color: azure;
+}
+>>>>>>> parent of b18c46e (carpeta)
 
 /* BOTONES */
 
 /* propiedades counes a los dos botones */
 div > .btn-group {
     display: flex;
+<<<<<<< HEAD
     flex-direction: row;
     gap: 20px;
 }
 .btn-group > a {
     display: flex;
+=======
+    gap: 20px;
+}
+.btn-group > a {
+>>>>>>> parent of b18c46e (carpeta)
     padding: 8px 20px;
     font-weight: bold;       
     border-radius: 8px;
@@ -241,7 +306,11 @@ div > .btn-group {
 
 /* Media QUERY */
 /* Tamaño mid */
+<<<<<<< HEAD
 @media (max-width: 868px) {
+=======
+@media (max-width: 768px) {
+>>>>>>> parent of b18c46e (carpeta)
     
 
     .f-row{
@@ -315,6 +384,10 @@ div > .btn-group {
             padding: 0 0;
         }
         p{
+<<<<<<< HEAD
             padding: 50px 0;
+=======
+            padding: 50 0;
+>>>>>>> parent of b18c46e (carpeta)
         }
 }
