@@ -253,6 +253,27 @@ p {
     border-radius: 50%;
 }
 
+#usbody {
+    background-image: url('../img/Habitacion_2.PNG'); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: auto; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina cualquier margen por defecto */
+}
+
+#usbody > img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+#usbody > div {
+    flex-direction: row;
+}
+
 .Logo_Tricot {
     width: 75%;
     max-width: 145px;
