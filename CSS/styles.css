@@ -1,3 +1,20 @@
+/* CAMBIO DE FUENTES  */
+
+@font-face {
+    font-family: titulos;
+    /* src: url(unicode.compacta.ttf); */
+    src: url(../Typos/Staatliches-Regular.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: resto;
+    src: url(../Typos/Micro5-Regular.ttf);
+
+    font-weight: normal;
+}
+
+
 :root {
     --pr-color: rgb(0, 0, 0);
     --text-color-w: rgb(255, 255, 255);
@@ -173,6 +190,66 @@ p {
     align-items: center;
     gap: 25px;
     font-size: 18px;
+}
+
+/* NOSOTROS */
+
+.fondo_us {
+    background-image: url('../img/Habitacion_2.PNG'); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: auto; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina cualquier margen por defecto */
+}
+
+.contenedor_us {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: flex-start;
+}
+
+.contenedor_us > section {
+    background-color: rgb(131, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.Logo_Tricot {
+    width: 75%;
+    max-width: 145px;
+    height: auto;
+}
+
+.rojo {
+    color: rgb(199, 1, 1);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.titulo h1 {
+    text-align: center;
+    font-family: 'titulos';
+    margin-bottom: 30px;
+}
+
+.titulo > a{
+    width: 10%;
+    max-width: 145px;
+    min-width: 100px;
+    height: auto;
+  }
+
+.blanco {
+    color: whitesmoke;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 /* PRODUCTOS */
@@ -365,6 +442,15 @@ div > .btn-group {
         .f-rowp > div > h2 {
             font-size: 30px
         }
+
+        /* PARTE DEL CSS NOSOTROS/US */
+
+        .Logo_Tricot {
+
+            width: 100%;
+            max-width: 125px;
+            height: auto;
+}
 }
 /* Tamaño Pequeño */
 @media (max-width: 500px) {
@@ -448,5 +534,14 @@ div > .btn-group {
             justify-content: center;
             min-height: 60px;
         }
+
+        /* PARTE DEL CSS NOSOTROS/US */
+
+        .Logo_Tricot {
+
+             width: 75%;
+            max-width: 116px;
+            height: auto;
+}
 }
 
