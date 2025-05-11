@@ -504,6 +504,16 @@ div > .btn-group {
             max-width: 125px;
             height: auto;
 }
+#header2 > div > h1 {
+            font-size: 50px;
+        }
+
+        #header2 > div > h2 {
+            font-size: 30px;
+        }
+        #header2 > div > p {
+            font-size: 18px;
+        }
 }
 /* Tamaño Pequeño */
 @media (max-width: 500px) {
@@ -586,6 +596,22 @@ div > .btn-group {
         .f-rowp > div  {
             justify-content: center;
             min-height: 60px;
+        }
+        #header2 > div:first-child {
+            padding: 0 0;
+        }
+        #header2 > div:last-child {
+            padding: 0 0;
+        }
+        #header2 > div > h1 {
+            font-size: 30px;
+        }
+
+        #header2 > div > h2 {
+            font-size: 20px;
+        }
+        #header2 > div > p {
+            font-size: 18px;
         }
 
         /* PARTE DEL CSS NOSOTROS/US */
