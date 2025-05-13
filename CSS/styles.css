@@ -167,8 +167,10 @@ main:nth-of-type(2){
 }
 
 .wrapper{
+ 
     display: flex;
-    flex-direction: column;
+    flex-direction: column  ;
+
 }
 
 #header2{
@@ -268,6 +270,7 @@ p {
     background-attachment: fixed;
     height: auto; 
     margin: 0; 
+}
 */
 .contenedor_us {
     display: flex;
@@ -280,7 +283,7 @@ p {
     /* align-items: flex-start; */
 }
 
-.contenedor_us > section {
+.contenedor_us> .wrapper_us > section {
     background-color: rgb(131, 0, 0);
     border-radius: 20px;
     padding: 20px;
@@ -300,6 +303,12 @@ p {
     height: auto;
 }
 
+.wrapper_us{
+
+    display: flex;
+    flex-direction: row;
+}
+
 
 .header_us > div {
     display: flex;
@@ -317,7 +326,7 @@ p {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    height: auto;
+    height: auto; /* Asegura que el body ocupe toda la altura de la ventana */
     margin: 0; /* Elimina cualquier margen por defecto */
 
     color: azure;
@@ -336,12 +345,30 @@ p {
     flex-direction: row;
 }
 
+.rojo {
+    color: rgb(199, 1, 1);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.titulo h1 {
+    text-align: center;
+    font-family: 'titulos';
+    margin-bottom: 30px;
+}
+
 .titulo > a{
     width: 10%;
     max-width: 145px;
     min-width: 100px;
     height: auto;
   }
+
+.blanco {
+    color: whitesmoke;
+    font-size: 60px;
+    font-weight: bold;
+}
 
 
 #usbody p {
@@ -350,7 +377,7 @@ p {
     color: whitesmoke;
 }
 
-#usbody .wrapper {
+#usbody .wrapper_us {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -360,13 +387,18 @@ p {
     align-items: flex-start;
 }
 
-#usbody .wrapper > section {
+#usbody .wrapper_us > section {
     background-color: rgb(131, 0, 0);
     height: auto;
     border-radius: 20px;
     padding: 20px;
     max-width: 300px;
     transition: transform 0.3s;
+}
+
+.artist{
+    display: flex;
+    flex-direction: column ;
 }
 
 #usbody img:hover {
@@ -565,6 +597,16 @@ div > .btn-group {
 }
 
 
+@media screen and (min-width: 1000px) {
+    
+    .wrapper_us{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+}
+
 /* Media QUERY */
 /* Tamaño mid */
 @media (max-width: 768px) {
@@ -601,24 +643,15 @@ div > .btn-group {
         }
 
         /* PARTE DEL CSS NOSOTROS/US */
-    .contenedor_us {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        gap: 30px;
-    }
-    
-    .contenedor_us a {
-     font-size: 28px;
-    }
 
-    .contenedor_us img {
-     width: 100%;
-     max-width: 596px;
-    }
-    
+        .Logo_Tricot {
 
-}
+            width: 100%;
+            max-width: 125px;
+            height: auto;
+        }
+
+
 #header2 > div > h1 {
             font-size: 50px;
         }
@@ -629,7 +662,7 @@ div > .btn-group {
         #header2 > div > p {
             font-size: 18px;
         }
-
+}
 /* Tamaño Pequeño */
 @media (max-width: 500px) {
 
@@ -721,24 +754,6 @@ div > .btn-group {
         #header2 > div:first-child {
             padding: 0 0;
         }
-
-          /* PARTE DEL CSS NOSOTROS/US */
-    .contenedor_us {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        gap: 20px;
-    }
-    .contenedor_us a {
-     font-size: 14px;
-    }
-
-    .contenedor_us img {
-     width: 100%;
-     max-width: 250px;
-    }
-    
-
     }
         #header2 > div:last-child {
             padding: 0 0;
@@ -756,15 +771,11 @@ div > .btn-group {
 
         /* PARTE DEL CSS NOSOTROS/US */
 
-/* Parte de CSS Index */
+        .Logo_Tricot {
 
-/* Imagen de fondo */
-.background{
-    background-image: url(../img/Pantalla_Test.png);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 100vh;
+             width: 75%;
+            max-width: 116px;
+            height: auto;
 }
 
 /* Posición del cuadro del título y el botón */
