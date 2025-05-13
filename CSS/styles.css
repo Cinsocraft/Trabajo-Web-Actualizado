@@ -238,16 +238,8 @@ p {
     transition: transform 0.3s;
 }
 
-
-.image_n {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
 .image_n > a {
     font-family: 'resto', Arial, sans-serif; /* Fuentes de respaldo si la otra no es compatible*/
-    color: whitesmoke;
     font-size: 26px;
     color: crimson;
 }
@@ -277,6 +269,9 @@ p {
     background-attachment: fixed;
     height: auto; /* Asegura que el body ocupe toda la altura de la ventana */
     margin: 0; /* Elimina cualquier margen por defecto */
+
+    color: azure;
+    font-family: 'resto', Arial, sans-serif;
 }
 
 #usbody > img {
@@ -314,6 +309,66 @@ p {
     color: whitesmoke;
     font-size: 60px;
     font-weight: bold;
+}
+
+
+#usbody p {
+    font-family: 'resto', Arial, sans-serif;
+    font-size: 36px;
+    color: whitesmoke;
+}
+
+#usbody .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: flex-start;
+}
+
+#usbody .wrapper > section {
+    background-color: rgb(131, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+#usbody img:hover {
+    border: 5px solid #100e14;
+}
+
+/* Estilo uniforme para todas las imágenes de perfiles */
+.profile-img {
+    width: 100%;
+
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+/* Efecto hover opcional */
+.profile-img:hover {
+    border: 5px solid #100e14;
+}
+
+/* Contenedor de cada perfil */
+.image_n {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 250px;
+}
+
+/* Texto debajo de la imagen */
+.image_n > a {
+    font-family: 'resto', Arial, sans-serif;
+    font-size: 26px;
+    color: crimson;
+    text-align: center;
 }
 
 /* PRODUCTOS */
