@@ -360,7 +360,6 @@ p {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    width: 250px;
 }
 
 /* Texto debajo de la imagen */
