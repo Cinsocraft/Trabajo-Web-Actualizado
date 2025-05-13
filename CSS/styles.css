@@ -32,9 +32,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
 
-    background-image: url(../img/Render_2.webp);
-    background-position: center;
-    background-attachment: fixed;
+
 }
 
 
@@ -149,7 +147,7 @@ a {
 
 /* CONTENIDO DE LA PÁGINA */
 /* Aqui poned vuestras partes */
-main {
+main:first-of-type {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +155,15 @@ main {
     background-image: url(../img/Render_2.webp);
     background-position: center;
     background-attachment: fixed;
+    
+}
 
+main:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: black;
 }
 
 .wrapper{
@@ -174,6 +180,16 @@ main {
     padding: 5%;
 }
 
+
+/*Provisional*/
+
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  max-height: max-content;
+}
+
+
 #galeria{
     
     padding: 5%;
@@ -183,6 +199,7 @@ main {
 #galeria>ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     gap:12px;
@@ -190,7 +207,7 @@ main {
 
 #galeria>ul>li{
     
-    width: 10vh;
+    width: 30%;
 }
 
 #galeria>ul>li>img{
@@ -243,7 +260,7 @@ p {
     font-size: 18px;
 }
 
-/* NOSOTROS */
+/* NOSOTROS CSS Rodrigo */
 
 .fondo_us {
     background-image: url('../img/Habitacion_2.PNG'); 
@@ -473,6 +490,9 @@ footer {
     background-color: #333;
     padding: 15px 35px;
     display: flex;
+    /*Provisional*/
+    /*position: absolute;*/
+    /*Provisional*/
     flex-direction: column;
     gap: 24px;
 }
@@ -629,6 +649,9 @@ div > .btn-group {
         }
         footer{
             padding: 20px 5px;
+            /*Provisional*/
+            /*position: unset;*/
+            /*Provisional*/
         }
         .nav-mobile {
             display: block;
