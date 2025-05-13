@@ -37,11 +37,7 @@ body {
     background-attachment: fixed;
 }
 
-.wrapper{ /*Poner el wrapper rompe la pagina*/
- 
-     /*margin: 80px 40px;*/
 
-}
 
 /* Barra de navegación */
 
@@ -161,12 +157,50 @@ main {
     background-image: url(../img/Render_2.webp);
     background-position: center;
     background-attachment: fixed;
+
+}
+
+.wrapper{
+ 
+    display: flex;
+    flex-direction: column  ;
+
 }
 
 #header2{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 5%;
+}
+
+#galeria{
+    
+    padding: 5%;
+    
+}
+
+#galeria>ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:12px;
+}
+
+#galeria>ul>li{
+    
+    width: 10vh;
+}
+
+#galeria>ul>li>img{
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+#gallery>ul>li{
+    height: auto;
 }
 
 main > #header2 > div{
