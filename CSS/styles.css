@@ -608,6 +608,15 @@ div > .btn-group {
         gap: 30px;
     }
     
+    .contenedor_us a {
+     font-size: 28px;
+    }
+
+    .contenedor_us img {
+     width: 100%;
+     max-width: 596px;
+    }
+    
 
 }
 #header2 > div > h1 {
@@ -719,6 +728,14 @@ div > .btn-group {
         align-items: center;
         padding: 10px;
         gap: 20px;
+    }
+    .contenedor_us a {
+     font-size: 14px;
+    }
+
+    .contenedor_us img {
+     width: 100%;
+     max-width: 250px;
     }
     
 
