@@ -274,7 +274,7 @@ p {
 */
 .contenedor_us {
     display: flex;
-    /* flex-direction: row; */
+     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
     gap: 40px;
@@ -594,17 +594,6 @@ div > .btn-group {
 .btn-group > a:last-child:hover{
     background-color: rgb(33, 33, 33);
     color: aliceblue;
-}
-
-
-@media screen and (min-width: 1000px) {
-    
-    .wrapper_us{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-    
 }
 
 /* Media QUERY */
