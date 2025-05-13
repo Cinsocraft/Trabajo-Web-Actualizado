@@ -222,19 +222,19 @@ p {
 
 .contenedor_us {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
     gap: 40px;
-    justify-content: space-around;
+    justify-content: center;
     padding: 40px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 
 .contenedor_us > section {
     background-color: rgb(131, 0, 0);
     border-radius: 20px;
     padding: 20px;
-    width: 300px;
+    max-width: 300px;
     transition: transform 0.3s;
 }
 
@@ -330,9 +330,10 @@ p {
 
 #usbody .wrapper > section {
     background-color: rgb(131, 0, 0);
+    height: auto;
     border-radius: 20px;
     padding: 20px;
-    width: 300px;
+    max-width: 300px;
     transition: transform 0.3s;
 }
 
