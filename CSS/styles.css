@@ -601,12 +601,14 @@ div > .btn-group {
         }
 
         /* PARTE DEL CSS NOSOTROS/US */
+    .contenedor_us {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+    }
+    
 
-        .Logo_Tricot {
-
-            width: 100%;
-            max-width: 125px;
-            height: auto;
 }
 #header2 > div > h1 {
             font-size: 50px;
@@ -618,7 +620,7 @@ div > .btn-group {
         #header2 > div > p {
             font-size: 18px;
         }
-}
+
 /* Tamaño Pequeño */
 @media (max-width: 500px) {
 
@@ -710,6 +712,16 @@ div > .btn-group {
         #header2 > div:first-child {
             padding: 0 0;
         }
+
+          /* PARTE DEL CSS NOSOTROS/US */
+    .contenedor_us {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+    
+
     }
         #header2 > div:last-child {
             padding: 0 0;
@@ -727,10 +739,6 @@ div > .btn-group {
 
         /* PARTE DEL CSS NOSOTROS/US */
 
-        .Logo_Tricot {
+        
 
-             width: 75%;
-            max-width: 116px;
-            height: auto;
-}
 
