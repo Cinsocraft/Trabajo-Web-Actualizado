@@ -291,12 +291,6 @@ p {
     flex-direction: row;
 }
 
-.Logo_Tricot {
-    width: 75%;
-    max-width: 145px;
-    height: auto;
-}
-
 .rojo {
     color: rgb(199, 1, 1);
     font-size: 60px;
