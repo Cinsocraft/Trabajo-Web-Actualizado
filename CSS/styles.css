@@ -812,12 +812,77 @@ div > .btn-group {
     justify-content: center;
 }
 
-/* Característica de los botones */
-.btn-group{
-    display: flex;
-    gap: 24px;
-    padding: 20vh;
-    min-width: 150px;
+/* Parte de CSS The Room*/
+body {
+    background-image: url(../img/Salida.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.contenido{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-/* Parte de CSS  The Room*/
+p {
+    text-align: center;
+    flex-direction:row;
+}
+
+/* Posición del cuadro del título y el botón */
+.box1 {
+    padding-top: 150px;
+    width: 80%;
+    position: fixed;
+}
+
+.horizontal {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.titulo{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.box2 {
+    align-content: center;
+}
+
+.rojo {
+    color: #ff0000;
+}
+
+.blanco {
+    color: rgb(255, 255, 255);
+}
+
+
+.video {
+    width: 100%;
+    justify-content: center;
+}
+
+
+.Descripción{
+    font-weight: bold;
+    color: beige;
+    font-size: 15px;
+}
+
+/* Características de los botones */
+.btn-group {
+    display: flex;
+    min-width: 150px;
+    justify-content: center;
+    padding-top: 15px;
+}
