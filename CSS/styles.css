@@ -224,6 +224,7 @@ p {
     display: flex;
     /* flex-direction: row; */
     flex-wrap: wrap;
+    height: auto;
     gap: 40px;
     justify-content: center;
     padding: 40px;
