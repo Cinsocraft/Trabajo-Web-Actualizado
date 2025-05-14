@@ -49,6 +49,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 10px 10px;
 }
 .menu-desktop {
@@ -131,6 +132,8 @@ a {
 
 /* CONTENIDO DE LA PÁGINA */
 /* Aqui poned vuestras partes */
+
+
 main:first-of-type {
     display: flex;
     justify-content: center;
@@ -337,7 +340,7 @@ p {
 
 .titulo > a{
     width: 10%;
-    padding-right: 8.3vw;
+    /* padding-right: 8.3vw; */
     max-width: 145px;
     min-width: 100px;
     height: auto;
@@ -465,14 +468,26 @@ p {
     line-height: 110%;
 }
 
-.f-rowp > div > p{
+.f-rowp > div > a{
     text-align: left;
+    text-decoration: none;
+    color: rgb(113, 34, 34);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 400ms;
 }
-
+.f-rowp > div > a:hover{
+    text-align: left;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 22px;
+    transition: 400ms;
+}
 .f-rowp > div > img {
-    height: 150px;
-    border-radius: 20px;
-    overflow: hidden;
+    max-height: 150px;
+    /* border-radius: 20px; */
+    /* overflow: hidden; */
     height: 100%;
     object-fit: cover;
 }
@@ -648,7 +663,7 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 
 .box2 {
@@ -722,7 +737,7 @@ p {
         padding: 10px 35px;
     }
     #titulo_Products {
-            padding: 0 2px;
+            padding: 0 20px;
         }
         #titulo_Products > h1 {
             font-size: 70px;
@@ -758,7 +773,9 @@ p {
 }
 /* Tamaño Pequeño */
 @media (max-width: 500px) {
-
+        .btn-group >a {
+            padding: 10px 0;
+        }
         .nav-desktop {
         display: none;
         }
@@ -831,6 +848,12 @@ p {
         #Products {
             padding: 1px 1px;
         }
+
+        #MainProducts {
+            display: flex;
+            flex-direction: column;
+        }
+
         .f-rowp > div > h2 {
             font-size: 30px
         }
@@ -869,5 +892,6 @@ p {
              width: 75%;
             max-width: 116px;
             height: auto;
+        
 }
 
