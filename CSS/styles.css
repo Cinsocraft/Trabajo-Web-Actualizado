@@ -168,10 +168,9 @@ main:nth-of-type(2){
 }
 
 
-/*Provisional*/
 
 hr.rounded {
-  border-top: 8px solid #bbb;
+  border-top: 8px solid #00000096;
   border-radius: 5px;
   max-height: max-content;
 }
