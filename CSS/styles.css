@@ -685,6 +685,8 @@ p {
 
 .texto{
     display: flex;
+    background-color: #100e14b9;
+    padding: 5%;
     flex-direction: column;
     align-items: center;
 }
